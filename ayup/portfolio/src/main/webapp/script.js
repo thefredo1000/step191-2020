@@ -145,11 +145,13 @@ async function logIn() {
   function initMap() {
     exports.map = new google.maps.Map(document.getElementById("map"), {
       center: {
-        lat: 25.5487519,
-        lng: -103.4719567
+        lat: 25.518403,
+        lng: -103.398155
       },
-      zoom: 8
+      mapTypeId: 'satellite',
+      zoom: 20
     });
+    exports.map.setTilt(45);
   }
 
   exports.initMap = initMap;
