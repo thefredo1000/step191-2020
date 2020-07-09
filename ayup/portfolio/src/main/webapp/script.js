@@ -154,5 +154,6 @@ async function logIn() {
     exports.map.setTilt(45);
     exports.marker =  new google.maps.Marker({position: { lat: 25.518403, lng: -103.398155 }, map: exports.map});
   }
+
   exports.initMap = initMap;
 })((this.window = this.window || {}));
